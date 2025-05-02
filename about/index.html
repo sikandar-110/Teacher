@@ -8,5 +8,11 @@
   <h1>About This Site</h1>
   <p>This is the about page content.</p>
   <p><a href="../">Back to Home</a></p>
+  <script>
+  const userId = window.location.hash.substring(1); // removes the #
+  if (userId) {
+    document.body.innerHTML += `<p>User ID: ${userId}</p>`;
+  }
+</script>
 </body>
 </html>
